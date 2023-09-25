@@ -47,3 +47,17 @@ console.log(full_name.toLocaleUpperCase()) // make the string to upper case
 console.log(full_name.toLocaleLowerCase()) // make the string to lower case
 console.log(typeof(full_name)) // get what type of the full_name variable
 console.log(email.indexOf("@")) // get index of a character from a string
+console.log(email.lastIndexOf("e")) // get the last index of a character from a string
+
+// slice - slice a section from a string
+
+console.log(email.slice(0,2)) // slice from position (x,y-1)
+console.log(email.substring(2,5)) // get how many characters from the starting position
+console.log(email.replace("@","%")) // replace a character with another character in the string
+
+// NUMBER
+
+let radius = 10
+const pi = 3.14
+
+
