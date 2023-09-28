@@ -59,5 +59,29 @@ console.log(email.replace("@","%")) // replace a character with another characte
 
 let radius = 10
 const pi = 3.14
+console.log(radius, pi)
 
+// number math operation
+console.log(radius+pi)
+console.log(radius*pi)
+console.log(radius-pi)
+console.log(radius**pi)
+console.log(radius/pi)
+console.log(radius%pi)
+radius++
+console.log(radius)
+radius--
+radius--
+console.log(radius)
+radius+=10
+console.log(radius)
 
+//template string
+//instead of using string concatenation, which sometimes can be complicated and make the code messy, 
+//we can use template string
+
+const title = "Best reads of 2019"
+const author = "Mario"
+const likes = 30;
+let result = `The blog called ${title} by ${author} has ${likes}`
+console.log(result)
