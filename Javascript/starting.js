@@ -85,3 +85,64 @@ const author = "Mario"
 const likes = 30;
 let result = `The blog called ${title} by ${author} has ${likes}`
 console.log(result)
+
+// good use case for template string is to create html template
+let html =`
+<h2>${title}</h2>
+<p>By ${author}</p>
+<span>This blog has ${likes} likes</span>
+`
+
+// ARRAY
+// we can store different datatype in an array
+let ninjas = ['shaun','ryu','chun-li']
+console.log(ninjas[1])
+ninjas[1] = 'fate'
+console.log(ninjas)
+let many = ['ok',12,213,'random']
+console.log(many)
+
+
+// get the index
+console.log(ninjas.indexOf('fate'))
+
+// concat two arrays
+let new_list = ninjas.concat(many) // return a combination of the two lists
+console.log(new_list)
+
+// push element into an array (destructive methods)
+ninjas.push('ken')
+console.log(ninjas)
+
+// pop element out of an array
+let ken = ninjas.pop()
+console.log(ken)
+
+// null and undefine
+let n = null // we use null when we initiate a variable or clear a variable
+
+// boolean
+let t = true
+let f = false
+
+console.log(true=="true") // expected false
+console.log(true==="true") // expected false
+console.log(false == "false") // expected false
+console.log(false ==="false") // expected false
+
+let ggez = 'ggez'
+console.log(ggez.includes("gg")) // expected true
+
+
+// there are two type of equal comparision in Javascript,
+// one is the == which will do a conversion of the two value two see if they are equal
+// second is === which will do a strict compare with the type and value of the two sides of the comparison. 
+
+// Type conversion
+
+score = "1000"
+score = Number(score)
+console.log(typeof(score))
+
+// string of any len is always true
+console.log(String(f),typeof(String(f)))
