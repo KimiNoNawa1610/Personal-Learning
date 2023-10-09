@@ -35,3 +35,33 @@ const cal_area = function(radius){
 
 const area = cal_area(2.5) // return the area value and store to a new constant
 console.log(area) 
+
+// Arrow Function
+// function to calculate sphere radius
+const cal_volume = (radius) => {
+    let volume = 4/3*(3.14)*(radius**3)
+    return volume.toPrecision(6) //round to the 4th decimal
+}
+
+const vol = cal_volume(2.4)
+console.log(vol)
+
+const bill = (products, tax) => {
+    let total = 0 
+    products.forEach(product => {
+        total += product + product * tax
+    });
+    return total 
+}
+
+var gundams = [10,20,30,15,120,1]
+const new_bill = bill(gundams,0.75)
+console.log(new_bill)
+
+// Function vs Method
+
+// method
+// method is just a function that is related to an object or datatype
+
+
+
