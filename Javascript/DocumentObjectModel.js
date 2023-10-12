@@ -30,3 +30,8 @@ mul_par.forEach((para,index)=>{
 })
 
 // there are also getAttribute and setAttribute to change an attribute of an element.
+
+// we can change class of html element with js
+const content = document.querySelector("p")// get the first p tag element and add class to success
+console.log(content.classList);
+content.classList.add("success")// to remove class content.classlist.remove("class_name")
