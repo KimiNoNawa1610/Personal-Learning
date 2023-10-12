@@ -8,3 +8,47 @@
     color: limegreen;
     border: 1px dotted limegreen;
 }
+li{
+    list-style-type: None;
+    max-width: 200px;
+    padding: 8px;
+    margin: 8px auto;
+    background: #eee;
+    border: 1px dotted #ddd;
+}
+
+.popup-button{
+    display: block;
+    margin: 20px auto;
+    background-color: red;
+    color: wheat;
+
+}
+
+.popup-wrapper{
+    background-color: rgba(0,0,0,1);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 40%;
+    height: 20%;
+    display: none;
+}
+
+.popup{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin:10% auto;
+    padding:20px;
+    background: white;
+    position: relative;
+}
+
+.popup-close{
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+}
