@@ -35,3 +35,20 @@ mul_par.forEach((para,index)=>{
 const content = document.querySelector("p")// get the first p tag element and add class to success
 console.log(content.classList);
 content.classList.add("success")// to remove class content.classlist.remove("class_name")
+
+// cycle through html collections
+const article = document.querySelector("article")
+console.log(article.children)
+
+// turn the html collections to an array
+let new_array = Array.from(article.children) // convert html or any other type to an array. 
+console.log(new_array)
+new_array.forEach((child)=>{
+    child.classList.add("article-element");// now all element in the article has this class
+})
+
+const h_3 = document.querySelector("h3")
+console.log(h_3.parentElement) // get the parent element of the html element
+console.log(h_3.nextSibling) // get the next siblings of the html element
+console.log(h_3.previousSibling) // get the previous siblings of the html element
+
